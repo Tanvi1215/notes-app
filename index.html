@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimal Notepad</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="app__header">
+      <div>
+        <p class="eyebrow">Notes</p>
+        <h1>Minimal Notepad</h1>
+        <p class="subhead">A simple, focused place to jot ideas.</p>
+      </div>
+    </header>
+
+    <section class="workspace">
+      <label class="field">
+        <span class="field__label">Title</span>
+        <input id="noteTitle" type="text" placeholder="Untitled" aria-label="Note title" />
+      </label>
+
+      <label class="field">
+        <span class="field__label">Note</span>
+        <textarea id="noteArea" spellcheck="false" placeholder="Start typing..." aria-label="Note text area"></textarea>
+      </label>
+
+      <div class="toolbar">
+        <button id="saveNote" class="button" aria-label="Save note">Save</button>
+        <button id="newNote" class="button secondary" aria-label="Start a new note">New</button>
+        <button id="clearNote" class="button secondary" aria-label="Clear the note">Clear</button>
+        <span id="status" class="status" aria-live="polite">Idle</span>
+      </div>
+    </section>
+
+    <section class="saved">
+      <div class="saved__header">
+        <div>
+          <p class="eyebrow">Saved</p>
+          <h2>Saved Notes</h2>
+        </div>
+        <button id="clearSaved" class="link-button" aria-label="Clear all saved notes">Clear all</button>
+      </div>
+      <div id="savedList" class="saved__list" role="list"></div>
+    </section>
+
+    <footer class="app__footer">
+      <p>Notes are saved locally in this browser.</p>
+    </footer>
+  </main>
+</body>
+</html>
