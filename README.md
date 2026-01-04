@@ -23,25 +23,6 @@ A small, clean notes web app — create, save, view and delete simple text notes
 - `style.css` — styles and responsive layout
 - `script.js` — notes logic (save/load/delete, keyboard shortcuts)
 
-## Run locally
-
-1. Open the app directly in your browser by double-clicking `index.html`.
-
-OR run a simple local server (recommended for consistent behavior):
-
-Windows / PowerShell:
-
-```powershell
-python -m http.server 8000
-```
-
-macOS / Linux:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open http://localhost:8000 in your browser and navigate to the project folder.
 
 ## Notes
 
